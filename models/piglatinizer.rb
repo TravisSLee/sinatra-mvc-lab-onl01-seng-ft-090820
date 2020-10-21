@@ -11,6 +11,7 @@ class PigLatinizer
   end
   
   def piglatinize(user_phrase)
+    words_in_sentence = user_phrase.split(" ")
     @new_word = user_phrase.split("")
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     if vowels.include?(@new_word[0])
